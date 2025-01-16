@@ -4,7 +4,7 @@ class duckAnimation {
         this.animator = new animator(ASSET_MANAGER.getAsset("./foxy.png"), 4, 0, 200, 200, 3, 0.2);
         this.x = 0;
         this.y = 0;
-        this.speed = 50;
+        this.speed = 100;
     };
     update(){
         this.x += this.speed * this.game.clockTick;
