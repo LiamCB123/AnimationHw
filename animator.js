@@ -8,7 +8,7 @@ class animator {
         this.elapsedTime += tick;
         if(this.elapsedTime > this.totalTime) this.elapsedTime -= this.totalTime;
         const frame = this.currentFrame();
-        ctx.drawImage(this.spritesheet, this.xStart + this.width *frame, this.yStart, this.width, this.height, x, y,this.width * 1.5, this.height * 1.5);
+        ctx.drawImage(this.spritesheet, this.xStart + this.width *frame, this.yStart, this.width, this.height, x, y,this.width * 3.5, this.height * 3.5);
 
     };
     currentFrame() {

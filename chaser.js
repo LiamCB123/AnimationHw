@@ -1,19 +1,18 @@
-class duckAnimation {
+class chaser {
     constructor(game){
         this.game = game;
-        this.animator = new animator(ASSET_MANAGER.getAsset("./duck.png"), 4, 0, 52, 55, 8, 0.05);
+        this.animator = new animator(ASSET_MANAGER.getAsset("./beaver.png"), 4, 0, 84, 65, 8, 0.05);
     
-        this.x = 300;
-        this.y = 550;
+        this.x = 0;
+        this.y = 510;
         this.speed = 200;
     };
     update(){
         this.x += this.speed * this.game.clockTick;
-        if(this.x > 1024){
-            this.x = -425;
-        
-        }
-    
+        if(this.x > 1250) {
+            this.x = -200;
+            
+        } 
     };
     draw(ctx){
         this.animator.drawFrame(this.game.clockTick, ctx, this.x, this.y);
